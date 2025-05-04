@@ -16,15 +16,58 @@ void apply_adjacent(t_cube *cube, char face, int is_prime, int is_double)
 	if (face == 'F')
 	{
 		if (is_prime)
-			for (int i = 0; i < 3; i++)
-				move_F(cube);  //implementar move_f_prime
+			move_F_prime(cube);
 		else if (is_double)
-			for (int i = 0; i < 2; i++) //implementar move_f2
-				move_F(cube);
+			move_F2(cube);
 		else
 			move_F(cube);
 	}
-	// TODO: añadir U, R, D, L, B
+	else if (face == 'U')
+	{
+		if (is_prime)
+			move_U_prime(cube);
+		else if (is_double)
+			move_U2(cube);
+		else
+			move_U(cube);
+	}
+/*	else if (face == 'R')
+	{
+		if (is_prime)
+			move_R_prime(cube);
+		else if (is_double)
+			move_R2(cube);
+		else
+			move_R(cube);
+	}
+	else if (face == 'D')
+	{
+		if (is_prime)
+			move_D_prime(cube);
+		else if (is_double)
+			move_D2(cube);
+		else
+			move_D(cube);
+	}
+	else if (face == 'L')
+	{
+		if (is_prime)
+			move_L_prime(cube);
+		else if (is_double)
+			move_L2(cube);
+		else
+			move_L(cube);
+	}
+	else if (face == 'B')
+	{
+		if (is_prime)
+			move_B_prime(cube);
+		else if (is_double)
+			move_B2(cube);
+		else
+			move_B(cube);
+	}
+*/	
 }
 
 void move(t_cube *cube, char *mov)

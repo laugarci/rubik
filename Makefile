@@ -4,8 +4,13 @@ SRC_DIR = src/
 SRC_FILES = main.c \
 	    utils.c \
 	    face_moves.c \
-	    moves.c \
-	    apply_input.c
+	    apply_input.c \
+	    moves_F.c \
+	    moves_U.c \
+#	    moves_D.c \
+	    moves_R.c \
+	    moves_L.c \
+	    moves_B.c \
 
 OBJ_DIR = objs/
 OBJ_FILES = $(SRC_FILES:.c=.o)

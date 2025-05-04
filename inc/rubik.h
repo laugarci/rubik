@@ -7,7 +7,7 @@
 # include <ctype.h>
 
 #define NUM_FACES 6
-#define SIZE 4
+#define SIZE 3
 
 #define WHITE  'W'
 #define RED    'R'
@@ -51,9 +51,16 @@ void	rotate_face_180(char *f);
 
 //moves
 void	move_F(t_cube *c);
-void	move_D(t_cube *c);
+void	move_F_prime(t_cube *c);
+void	move_F2(t_cube *c);
+
+void	move_U(t_cube *c);
+void	move_U_prime(t_cube *c);
+void	move_U2(t_cube *c);
+
+/*void	move_D(t_cube *c);
 void	move_R(t_cube *c);
 void	move_L(t_cube *c);
-void	move_B(t_cube *c);
+void	move_B(t_cube *c);*/
 
 #endif
