@@ -31,15 +31,6 @@ void apply_adjacent(t_cube *cube, char face, int is_prime, int is_double)
 		else
 			move_U(cube);
 	}
-/*	else if (face == 'R')
-	{
-		if (is_prime)
-			move_R_prime(cube);
-		else if (is_double)
-			move_R2(cube);
-		else
-			move_R(cube);
-	}
 	else if (face == 'D')
 	{
 		if (is_prime)
@@ -48,8 +39,9 @@ void apply_adjacent(t_cube *cube, char face, int is_prime, int is_double)
 			move_D2(cube);
 		else
 			move_D(cube);
+
 	}
-	else if (face == 'L')
+/*	else if (face == 'L')
 	{
 		if (is_prime)
 			move_L_prime(cube);

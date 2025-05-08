@@ -7,8 +7,8 @@ SRC_FILES = main.c \
 	    apply_input.c \
 	    moves_F.c \
 	    moves_U.c \
-#	    moves_D.c \
-	    moves_R.c \
+	    moves_D.c \
+#	    moves_R.c \
 	    moves_L.c \
 	    moves_B.c \
 

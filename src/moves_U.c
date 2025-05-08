@@ -9,6 +9,7 @@ void move_U(t_cube *c)
 
 	for (int i = 0; i < SIZE; i++)
 		tmp[i] = c->face[F][i];
+	tmp[SIZE] = '\0';
 
 	for (int i = 0; i < SIZE; i++)
 		c->face[F][i] = c->face[R][i];

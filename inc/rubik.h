@@ -58,8 +58,10 @@ void	move_U(t_cube *c);
 void	move_U_prime(t_cube *c);
 void	move_U2(t_cube *c);
 
-/*void	move_D(t_cube *c);
-void	move_R(t_cube *c);
+void	move_D(t_cube *c);
+void	move_D_prime(t_cube *c);
+void	move_D2(t_cube *c);
+/*void	move_R(t_cube *c);
 void	move_L(t_cube *c);
 void	move_B(t_cube *c);*/
 
